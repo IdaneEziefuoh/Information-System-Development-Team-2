@@ -16,7 +16,13 @@ As an occasional bus user, I want to know the fare for different bus zones so th
 As a bus operator, I want to update schedules in real-time so that users receive accurate information.
 
 ### Actors
-TODO: List and describe the actors/users for this product.
+Commuter: Regular user who checks bus schedules, zones, and ticket prices for daily travel.
+
+Tourist: Occasional user seeking information on routes, times, and prices for short-term travel.
+
+Driver/Operator: Bus drivers or operators who update bus status, delays, and other route-specific information.
+
+Admin: Manages the app’s backend, ensuring accurate scheduling, pricing updates, and general app maintenance.
 
 ### Use Cases
 TODO: Describe each use case (at least one per team member).
