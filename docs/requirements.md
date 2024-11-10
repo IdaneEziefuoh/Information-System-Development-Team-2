@@ -3,8 +3,17 @@
 ## User Needs
 
 ### User stories
-TODO: Write brief user stories to explain how various actors would interact with the system to accomplish a goal.
-    Express these in the form from agile development:- As a (role) I want (goal) so that (benefit).
+As a commuter, I want to view real-time bus arrival times so that I can plan my travel and avoid long waits.
+
+As a student, I want to find the nearest bus stops and their schedules so that I can catch the bus on time to get to school.
+
+As a tourist, I want to see bus zones and routes on a map so that I can easily navigate an unfamiliar area.
+
+As a city planner, I want to access bus usage data so that I can optimize routes and schedules for better service.
+
+As an occasional bus user, I want to know the fare for different bus zones so that I can plan my budget for trips.
+
+As a bus operator, I want to update schedules in real-time so that users receive accurate information.
 
 ### Actors
 TODO: List and describe the actors/users for this product.
