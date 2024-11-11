@@ -4,18 +4,24 @@
 
 ### User stories
 As a tourist, I want to find historical sites near my current location so that I can easily explore Bristol’s heritage without extensive planning.
+
 As a local resident, I want to discover lesser-known historical landmarks in Bristol so that I can learn more about my city’s history.
+
 As a student, I want to search for historical sites by specific time periods or themes so that I can find relevant information for my school projects.
+
 As a history enthusiast, I want to save a list of my favorite historical sites so that I can revisit them and share recommendations with friends.
-As a user with accessibility needs, I want the app to be easy to navigate with clear text, icons, and voice-over compatibility so that I can explore historical sites without barriers.
+
 As a parent, I want to find child-friendly historical sites or walking routes so that my family can enjoy educational outings together.
 
 ### Actors
 Tourists: Visitors to Bristol who want to explore the city’s historical sites.
+
 Local Residents: People living in Bristol who are interested in discovering more about their city's history.
+
 Students: Individuals using the app as a resource for educational purposes.
+
 History Enthusiasts: Users with a strong interest in exploring historical locations and learning about the past.
-Users with Accessibility Needs: Individuals who may have visual, hearing, or mobility impairments and require an inclusive app experience.
+
 Parents: Families seeking educational and enjoyable activities for their children.
 
 ### Use Cases
