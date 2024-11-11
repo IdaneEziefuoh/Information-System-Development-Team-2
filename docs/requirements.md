@@ -3,26 +3,24 @@
 ## User Needs
 
 ### User stories
-As a commuter, I want to view real-time bus arrival times so that I can plan my travel and avoid long waits.
+As a commuter, I want to view zone boundaries based on my current location, so that I can see which zone I am currently in.
 
-As a student, I want to find the nearest bus stops and their schedules so that I can catch the bus on time to get to school.
+As a commuter, I want to check if there are cheaper travel options for adjacent zones, so that I can save money on my commute.
 
-As a tourist, I want to see bus zones and routes on a map so that I can easily navigate an unfamiliar area.
+As a tourist, I want to see an overview of all bus zones, so that I can understand how far I can travel with a certain ticket.
 
 As a city planner, I want to access bus usage data so that I can optimize routes and schedules for better service.
 
-As an occasional bus user, I want to know the fare for different bus zones so that I can plan my budget for trips.
-
-As a bus operator, I want to update schedules in real-time so that users receive accurate information.
+As a student, I want to plan my route between my accommodation and campus, so that I can see which bus zones I will pass through and the associated costs.
 
 ### Actors
-Commuter: Regular user who checks bus schedules, zones, and ticket prices for daily travel.
+Commuter: Regular user who checks zones and ticket prices for daily travel.
 
-Tourist: Occasional user seeking information on routes, times, and prices for short-term travel.
+Tourist: Occasional user seeking information on routes and prices for short-term travel.
 
-Driver/Operator: Bus drivers or operators who update bus status, delays, and other route-specific information.
+Driver/Operator: Bus drivers or operators who update bus prices and other route-specific information.
 
-Admin: Manages the app’s backend, ensuring accurate scheduling, pricing updates, and general app maintenance.
+Admin: Manages the app’s backend, ensuring accurate pricing updates and general app maintenance.
 
 ### Use Cases
 TODO: Describe each use case (at least one per team member).
