@@ -56,14 +56,24 @@ TODO: Your Use-Case diagram should include all use-cases.
 
 ## Software Requirements Specification
 ### Functional requirements
-TODO: create a list of functional requirements. 
-    e.g. "The system shall ..."
-    Give each functional requirement a unique ID. e.g. FR1, FR2, ...
-    Indicate which UC the requirement comes from.
+
+| **Requirement ID** | **Requirement**                                                                                     | **Use Case ID** |
+|---------------------|---------------------------------------------------------------------------------------------------|-----------------|
+| FR1                | The system shall allow users to create, log in, and manage accounts to track their activity.       | UC1             |
+| FR2                | The system shall enable users to mark historical sites as visited and update their progress.       | UC2             |
+| FR3                | The system shall display an interactive map with markers for historical sites.                     | UC4             |
+| FR4                | The system shall allow users to filter historical sites by categories such as time period or type. | UC2, UC4        |
+| FR5                | The system shall award achievement badges when users reach site visit milestones.                  | UC3             |
+| FR6                | The system shall enable users to view detailed information about a selected historical site.       | UC4             |
+| FR7                | The system shall allow users to save favorite historical sites for future reference.               | UC3             |
 
 
 ### Non-Functional Requirements
-TODO: Consider one or more [quality attributes](https://en.wikipedia.org/wiki/ISO/IEC_9126) to suggest a small number of non-functional requirements.
-Give each non-functional requirement a unique ID. e.g. NFR1, NFR2, ...
 
-Indicate which UC the requirement comes from.
+| **Requirement ID** | **Requirement**                                                                                  | **Use Case ID** |
+|---------------------|--------------------------------------------------------------------------------------------------|-----------------|
+| NFR1               | The system shall load the interactive map within 4 seconds to ensure smooth user experience.      | UC4             |
+| NFR2               | The system shall securely store user account details in compliance with GDPR.                     | UC1             |
+| NFR3               | The system shall sync user progress and achievements across devices within 10 seconds.            | UC2, UC3        |
+| NFR4               | The system shall handle a minimum of 500 simultaneous users without performance degradation.       | All UCs         |
+| NFR5               | The system shall have a responsive design, optimized for both desktop and mobile devices.         | All UCs         |
