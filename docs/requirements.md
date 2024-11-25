@@ -40,6 +40,19 @@ TODO: Describe each use case (at least one per team member).
 | **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
 
 
+| UC1 | Explore Historical Sites on an Interactive Map | Ollie
+| -------------------------------------- | ------------------- |
+| **Description** | Users can explore historical sites through an interactive map, viewing site details by clicking on map markers. This feature helps users visually locate sites and plan visits. |
+| **Actors** | Tourists, Local Residents, History Enthusiasts, Students |
+| **Assumptions** | Users have an internet connection to load the map and fetch site data.</td></tr>
+| **Steps** | 1. The app loads a map of Bristol, highlighting historical sites with markers.
+2. User zooms in or pans the map to explore specific areas.
+3. User clicks on a marker to view the site’s details, including name, description, historical period, and images.
+4. User has the option to save the site as a favorite or mark it as visited.|
+| **Variations** | User can filter the map to show sites based on categories (e.g., time period) |
+| **Non-functional** | The map should load within 4 seconds and remain responsive during navigation. |
+| **Issues** | Managing performance issues when displaying a large number of site markers. |
+
 TODO: Your Use-Case diagram should include all use-cases.
 
 ![Insert your Use-Case Diagram Here](images/use-case.png)
