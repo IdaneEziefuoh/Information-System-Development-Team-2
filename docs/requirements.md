@@ -57,21 +57,17 @@ TODO: Your Use-Case diagram should include all use-cases.
 ## Software Requirements Specification
 ### Functional requirements
 
-| **Requirement ID** | **Requirement**                                                                                 | **Use Case ID** |
-|---------------------|---------------------------------------------------------------------------------------------------|----------------|
-| 1                | The system shall display an interactive map with markers for historical sites.                     | UC4             
-  |
-| 2                | The system shall allow users to filter historical sites by categories such as time period or type. | UC2, UC4      
-  |                             
-| 3                | The system shall enable users to view detailed information about a selected historical site.       | UC4  
+| **Requirement ID** | **Requirement**                                                                                  | **Use Case ID**|
+|---------------------|-------------------------------------------------------------------------------------------------|----------------|
+| 1                   | The system shall display an interactive map with markers for historical sites.                  | UC4            |
+| 2                   | The system shall allow users to filter historical sites by categories such as time period or type.| UC2, UC4     |
+| 3                   | The system shall enable users to view detailed information about a selected historical site.    | UC4            |
 
 
 ### Non-Functional Requirements
 
 | **Requirement ID** | **Requirement**                                                                                 | **Use Case ID** |
-|---------------------|--------------------------------------------------------------------------------------------------|-----------------|
-| 1               | The system shall load the interactive map within 4 seconds to ensure smooth user experience.      | UC4             |
-  |   
-| 2               | The system shall handle a minimum of 500 simultaneous users without performance degradation.      | All UCs         |
-  |
-| 3               | The system shall have a responsive design, optimized for both desktop and mobile devices.         | All UCs         |
+|---------------------|------------------------------------------------------------------------------------------------|-----------------|
+| 1                   | The system shall load the interactive map within 4 seconds to ensure smooth user experience.   | UC4             |
+| 2                   | The system shall handle a minimum of 500 simultaneous users without performance degradation.   | All UCs         |
+| 3                   | The system shall have a responsive design, optimized for both desktop and mobile devices.      | All UCs         |
