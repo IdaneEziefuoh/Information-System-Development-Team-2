@@ -29,15 +29,18 @@ TODO: Describe each use case (at least one per team member).
     Give each use case a unique ID, e.g. UC1, UC2, ...
     Summarise these using the use-case template below.
 
-| TODO: USE-CASE ID e.g. UC1, UC2, ... | TODO: USE-CASE NAME | 
+|  UC2| Virtual Tour with Augmented Reality (AR)Virtual | 
 | -------------------------------------- | ------------------- |
-| **Description** | TODO: Goal to be achieved by use case and sources for requirement |
-| **Actors** | TODO: List of actors involved in use case |
-| **Assumptions** | TODO: Pre/post-conditions if any</td></tr>
-| **Steps** | TODO: Interactions between actors and system necessary to achieve goal |
-| **Variations** | TODO: OPTIONAL - Any variations in the steps of a use case |
-| **Non-functional** | TODO: OPTIONAL - List of non-functional requirements that the use case must meet. |
-| **Issues** | TODO: OPTIONAL - List of issues that remain to be resolved |
+| **Description** | Users can take a virtual tour of historical sites using AR, overlaying information on their smartphone camera view for an immersive experience. This enhances learning and engagement. |
+| **Actors** |Tourists, Local Residents, History Enthusiasts, Students |
+| **Assumptions** | Users have a smartphone with AR capabilities and an active internet connection.|
+| **Steps** |1. User launches the AR feature within the app.
+2. The app detects the user's location and identifies nearby historical sites.
+3. User points their smartphone camera at a site, and the app overlays historical facts, images, and animations.
+4. User can interact with the AR content (e.g., tap to hear an audio guide). |
+| **Variations** | If the user is not on-site, the app can simulate the AR experience using preloaded images and data |
+| **Non-functional** |The AR content should load within 3 seconds and be visually stable without excessive lag |
+| **Issues** | TEnsuring AR content is accurate and aligns correctly with real-world locations.|
 
 
 | UC1 | Explore Historical Sites on an Interactive Map | 
