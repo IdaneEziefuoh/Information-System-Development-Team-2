@@ -1,5 +1,5 @@
 # Project Proposal
-Website name: Bristol Historical Explorer 
+Website name: Bristol History Exlorer 
 ## Business Case
 
 ### Problem statement
