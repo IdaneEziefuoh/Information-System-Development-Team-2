@@ -38,4 +38,4 @@ Interactive Map and Filters:
 Thematic Content:
 - Curate and display dynamic content like self-guided tours and daily highlights.
 
-![Insert your Context Diagram Here](images/context.png)
+![Insert your Context Diagram Here](images/context-diagram.png)
