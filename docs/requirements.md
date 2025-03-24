@@ -25,9 +25,7 @@ History Enthusiasts: Users with a strong interest in exploring historical locati
 Parents: Families seeking educational and enjoyable activities for their children.
 
 ### Use Cases
-TODO: Describe each use case (at least one per team member).
-    Give each use case a unique ID, e.g. UC1, UC2, ...
-    Summarise these using the use-case template below.
+
 
 |  UC2| Virtual Tour with Augmented Reality (AR)Virtual | 
 | -------------------------------------- | ------------------- |
