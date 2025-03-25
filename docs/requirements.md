@@ -47,7 +47,7 @@ Parents: Families seeking educational and enjoyable activities for their childre
 | **Actors** | Tourists, Local Residents, History Enthusiasts, Students |
 | **Assumptions** | Users have an internet connection to load the map and fetch site data.</td></tr>
 | **Steps** | 1. The app loads a map of Bristol, highlighting historical sites with markers.<br>2. User zooms in or pans the map to explore specific areas.<br>3. User clicks on a marker to view the site’s details, including name, description, historical period, and images.<br>|
-| **Variations** | User can filter the map to show sites based on categories (e.g., time period) |
+| **Variations** | User can filter the map to show sites based on categories (e.g., grade) |
 | **Non-functional** | The map should load within 4 seconds and remain responsive during navigation. |
 | **Issues** | Managing performance issues when displaying a large number of site markers. |
 
@@ -61,7 +61,7 @@ TODO: Your Use-Case diagram should include all use-cases.
 | **Requirement ID** | **Requirement**                                                                                  | **Use Case ID**|
 |---------------------|-------------------------------------------------------------------------------------------------|----------------|
 | 1                   | The system shall display an interactive map with markers for historical sites.                  | UC4            |
-| 2                   | The system shall allow users to filter historical sites by categories such as time period or type.| UC2, UC4     |
+| 2                   | The system shall allow users to filter historical sites by categories such as grade| UC2, UC4     |
 | 3                   | The system shall enable users to view detailed information about a selected historical site.    | UC4            |
 
 
