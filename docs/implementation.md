@@ -2,6 +2,18 @@
 
 ## Introduction
 TODO: Describe the system implemented (Describe the dataset. Are there any known issues? Describe any configuration data).
+Dataset
+The system uses a historical sites dataset, which includes:
+
+Site Name: The official name of the historical site.
+
+Location Coordinates: Latitude and longitude for map rendering.
+
+Historical Significance: A brief description of the site's importance.
+
+Time Period: The era or historical period associated with the site.
+
+Images & Media: Photos, illustrations, and optional 3D models for AR visualization.
 
 ## Project Structure
 TODO: Provide an outline of the project folder structure and the role of each file within it.
