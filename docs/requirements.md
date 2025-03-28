@@ -41,7 +41,7 @@ Parents: Families seeking educational and enjoyable activities for their childre
 | **Issues** | TEnsuring AR content is accurate and aligns correctly with real-world locations.|
 
 
-| UC1 | Explore Historical Sites on an Interactive Map | 
+| UC1 | Explore Historical Sites on an Interactive Map - **OLLIE** | 
 | -------------------------------------- | ------------------- |
 | **Description** | Users can explore historical sites through an interactive map, viewing site details by clicking on map markers. This feature helps users visually locate sites and plan visits. |
 | **Actors** | Tourists, Local Residents, History Enthusiasts, Students |
