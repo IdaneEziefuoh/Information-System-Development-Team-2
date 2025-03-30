@@ -41,13 +41,13 @@ Parents: Families seeking educational and enjoyable activities for their childre
 | **Issues** | TEnsuring AR content is accurate and aligns correctly with real-world locations.|
 
 
-| UC1 | Explore Historical Sites on an Interactive Map - **OLLIE** | 
+| UC1 | Filter sites by grade - **OLLIE** | 
 | -------------------------------------- | ------------------- |
-| **Description** | Users can explore historical sites through an interactive map, viewing site details by clicking on map markers. This feature helps users visually locate sites and plan visits. |
+| **Description** | Users can explore historical sites through an interactive map, viewing site details by clicking on map markers. They can then filter buildings by grade to narrow down which historical sites they are most interested in seeing |
 | **Actors** | Tourists, Local Residents, History Enthusiasts, Students |
 | **Assumptions** | Users have an internet connection to load the map and fetch site data.</td></tr>
-| **Steps** | 1. The app loads a map of Bristol, highlighting historical sites with markers.<br>2. User zooms in or pans the map to explore specific areas.<br>3. User clicks on a marker to view the site’s details, including name, description, historical period, and images.<br>|
-| **Variations** | User can filter the map to show sites based on categories (e.g., grade) |
+| **Steps** | 1. The app loads a map of Bristol, highlighting historical sites with markers.<br>2. User uses the checkboxes to pick which grade(s) of buildings they would like to see.<br>3. User then finds the site they are interested in<br>4. User clicks on a marker to view the site’s details, including name, description, grade, and external information.<br>|
+| **Variations** | User can search for a site then filter to find the exact match |
 | **Non-functional** | The map should load within 4 seconds and remain responsive during navigation. |
 | **Issues** | Managing performance issues when displaying a large number of site markers. |
 
