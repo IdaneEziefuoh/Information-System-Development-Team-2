@@ -27,8 +27,10 @@ TODO: Provide an outline of the project folder structure and the role of each fi
 provide a table listing the number of jslint warnings/reports for each module.
 
 index.html -> Contains all the html code, map configuration functions and event listeners.
-script.js -> Contains the other functions, such as search, filter, get location
-style.css -> contains the style 
+
+script.js -> Contains the other functions, such as search, filter, get location.
+
+style.css -> contains the style.
 
 ## Software Architecture
 TODO: Describe the major components of your architecture. Are any particular architectural styles being used?
