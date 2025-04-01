@@ -91,9 +91,11 @@ This guide explains how to filter historical sites by their listed building grad
 - You should see options for different grades (e.g., **Grade I, Grade II*, and Grade II**).
 
 **Desktop**
+
 ![Step 2 - Desktop](images/step2-1.png)
 
 **Mobile**
+
 ![Step 2 - Desktop](images/step2-2.png)
 
 ## Step 3: Choose the Desired Grade
