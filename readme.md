@@ -1,6 +1,10 @@
-# TODO: PROJECT NAME HERE
+# Bristol History Explorer
 
-TODO: Brief outline of your project describing the dataset and a link to it.
+Bristol History Explorer is designed to help users discover and explore historical sites in Bristol. The website will use the Listed Buildings in Bristol dataset from Bristol’s Open Data platform, which provides detailed information about the city's historic buildings, including their names, locations, architectural details, and grade.
+
+The dataset is publicly available at: [Bristol Open Data - Listed building outline](https://opendata.bristol.gov.uk/datasets/44c7b674edb44e38a48c93162bbfe449_3/explore)
+
+
 
 1. [Planning](docs/planning.md)
 2. [Requirements](docs/requirements.md)
