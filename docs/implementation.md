@@ -83,7 +83,7 @@ This guide explains how to filter historical sites by their listed building grad
 
 ## Step 1: Open the Website
 - Go to the *Bristol History Explorer* website in your browser.
-  [Step 1](images/step1.png)
+![Step 1](images/step1.png)
 
 ## Step 2: Locate the Filter Menu
 - Find the **Filter** button or panel, left side of page on desktop, above the map on mobile.
