@@ -100,9 +100,13 @@ This guide explains how to filter historical sites by their listed building grad
 
 ## Step 3: Choose the Desired Grade
 - Click or tap on the grade you want to filter by (e.g., **Grade I** for the most historically significant buildings).
-- You may also have the option to select multiple grades at once.
+- You can also select multiple grades at once.
+
+![Step 3](images/step3.png)
 
 ## Step 4: Explore the Results
-- Browse the filtered list or map to see the historical sites that match your criteria.
-- Click on any site for more details, such as its history, images, and location.
+- Find the location on the map.
+- Click on the site to view more information.
+
+![Step 4](images/step4.png)
 
