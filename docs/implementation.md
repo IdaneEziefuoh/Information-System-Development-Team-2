@@ -83,11 +83,18 @@ This guide explains how to filter historical sites by their listed building grad
 
 ## Step 1: Open the Website
 - Go to the *Bristol History Explorer* website in your browser.
+
 ![Step 1](images/step1.png)
 
 ## Step 2: Locate the Filter Menu
 - Find the **Filter** button or panel, left side of page on desktop, above the map on mobile.
 - You should see options for different grades (e.g., **Grade I, Grade II*, and Grade II**).
+
+**Desktop**
+![Step 2 - Desktop](images/step2-1.png)
+
+**Mobile**
+![Step 2 - Desktop](images/step2-2.png)
 
 ## Step 3: Choose the Desired Grade
 - Click or tap on the grade you want to filter by (e.g., **Grade I** for the most historically significant buildings).
