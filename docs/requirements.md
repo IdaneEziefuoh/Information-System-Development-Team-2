@@ -63,7 +63,7 @@ Parents: Families seeking educational and enjoyable activities for their childre
 | **Steps** | 1. The app loads a map of Bristol, highlighting historical sites with symbols.<br>2. User uses the search box to type the name of their building.<br>3. User then finds the site they are interested in on the map<br>4. User clicks on a marker to view the site’s details, including name, description, grade, and external information.<br>|
 | **Variations** | User can search for a site then filter to find the exact match |
 | **Non-functional** | The map should load the matching sites within 4 seconds. |
-| **Issues** | No results handling, the map will just be empty. |
+| **Issues** | If there are no results, the map will just be empty. |
 
 TODO: Your Use-Case diagram should include all use-cases.
 
