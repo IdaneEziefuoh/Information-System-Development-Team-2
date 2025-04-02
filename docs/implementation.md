@@ -79,8 +79,6 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 ## Step-by-Step Guide: Filtering by Grade on Bristol History Explorer - Ollie 
 
-This guide explains how to filter historical sites by their listed building grade on the *Bristol History Explorer* website.
-
 ## Step 1: Open the Website
 - Go to the *Bristol History Explorer* website in your browser.
 
@@ -109,4 +107,40 @@ This guide explains how to filter historical sites by their listed building grad
 - Click on the site to view more information.
 
 ![Step 4](images/step4.png)
+
+
+## Step-by-Step Guide: Searching for a site on Bristol History Explorer - Ollie
+
+## Step 1: Open the Website
+- Go to the *Bristol History Explorer* website in your browser.
+
+![Step 1](images/step1.png)
+
+## Step 2: Locate the Search Box
+- Find the **Search Box** at the top right of page on desktop, and in the top middle on mobile.
+
+**Desktop**
+
+![Step 2 - Desktop](images/step2-search1.png)
+
+**Mobile**
+
+![Step 2 - Desktop](images/step2-search2.png)
+
+## Step 3: Enter the desired 
+- Click or tap on the grade you want to filter by (e.g., **Grade I** for the most historically significant buildings).
+- You can also select multiple grades at once.
+
+![Step 3](images/step3-search.png)
+
+## Step 4: Explore the Results
+- Find the location on the map.
+- Click on the site to view more information.
+
+![Step 4](images/step4-search.png)
+
+## Step 5 (Optional): Clear the map
+- Click on the Clear Search button in the top right (desktop) or top middle (mobile) to clear the map and reset the search.
+
+![Step 4](images/step5-search.png)
 
