@@ -110,6 +110,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 <br>
 <br>
+
 ## Step-by-Step Guide: Searching for a site on Bristol History Explorer - Ollie
 
 ## Step 1: Open the Website
