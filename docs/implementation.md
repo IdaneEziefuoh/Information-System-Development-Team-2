@@ -108,7 +108,8 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 ![Step 4](images/step4.png)
 
-
+<br>
+<br>
 ## Step-by-Step Guide: Searching for a site on Bristol History Explorer - Ollie
 
 ## Step 1: Open the Website
