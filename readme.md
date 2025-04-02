@@ -12,3 +12,8 @@ The dataset is publicly available at: [Bristol Open Data - Listed building outli
 4. [Implementation](docs/implementation.md)
 5. [Testing](docs/testing.md)
 
+Source code:
+[index.html](docs/index.html)
+[script.js](docs/script.js)
+[style.css](docs/style.css)
+
