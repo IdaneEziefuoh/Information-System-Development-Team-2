@@ -1,0 +1,197 @@
+<html>
+    <head>
+        <title>Bristol History Explorer</title>
+        <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
+        <link href="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css" rel="stylesheet">
+        <script src="https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js"></script>
+        <style>
+        </style>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/openlayers/2.13.1/OpenLayers.js"></script>
+        
+        <script>
+            const MY_TOKEN = "pk.eyJ1IjoiYzBuY2Vybm4iLCJhIjoiY204cTRsY2cxMGg0eTJpczV5bWx4Yng2ayJ9.pudtEPe2cvIZcasZwjPUzw";
+
+            function fetchGeoJSON() {
+                const url = "https://maps2.bristol.gov.uk/server2/rest/services/ext/ODP_Datasets/MapServer/3/query?where=1%3D1&outFields=*&outSR=4326&f=geojson";
+                return fetch(url, {
+                    method: "GET",
+                    headers: {
+                        Accept: "application/json"
+                    }
+                }).then(response => response.json()).catch(error => {
+                    console.error("Error loading GeoJSON:", error);
+                    throw error;
+                });
+            }
+            // Function to configure the map and add markers
+            function configureMap(data) {
+                if (map.getLayer('site-symbols')) {
+                    map.removeLayer('site-symbols');
+                }
+                if (map.getSource('historic-sites')) {
+                    map.removeSource('historic-sites');
+                }
+                // Add the GeoJSON source to the map
+                map.addSource('historic-sites', {
+                    "type": "geojson",
+                    "data": data
+                });
+                // Check if the image is already added, to avoid adding it again
+                if (!map.hasImage('custom-marker')) {
+                    // Load the custom marker image
+                    map.loadImage('https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Map_marker.svg/100px-Map_marker.svg.png', function(error, image) {
+                        if (error) {
+                            console.error("Error loading marker image:", error);
+                            return;
+                        }
+                        // Add the custom marker image to the map
+                        map.addImage('custom-marker', image);
+                        // Add the layer with the custom icon
+                        map.addLayer({
+                            "id": "site-symbols", // Layer ID used in click event
+                            "type": "symbol",
+                            "source": "historic-sites",
+                            "layout": {
+                                "icon-image": "custom-marker", // Uses the loaded image
+                                "icon-size": 0.2
+                            }
+                        });
+                    });
+                } else {
+                    // If image is already added, just add the layer
+                    map.addLayer({
+                        "id": "site-symbols", // Layer ID used in click event
+                        "type": "symbol",
+                        "source": "historic-sites",
+                        "layout": {
+                            "icon-image": "custom-marker", // Use the custom marker
+                            "icon-size": 0.2
+                        }
+                    });
+                }
+                // Add click event listener to show information in a popup
+                map.on('click', 'site-symbols', function(e) { // Change 'places' to 'site-symbols'
+                    const properties = e.features[0].properties;
+                    // Function to check if a string is a valid URL
+                    function isValidURL(string) {
+                        try {
+                            new URL(string);
+                            return true;
+                        } catch (_) {
+                            return false;
+                        }
+                    }
+                    // Check if the NOTES field is a valid URL
+                    let notesContent = isValidURL(properties.NOTES) ? `
+					<a href="${properties.NOTES}" target="_blank">Click here for more info</a>` : "No information available";
+                    // Create a formatted string with the building information
+                    const popupContent = `
+            
+					<h3> ${properties.NAME} </h3>
+						<strong>Alternative Description:</strong> ${properties.ALT_DESCRIPTION} 
+						<br>
+                        <br>
+							<strong>Grade:</strong> ${properties.LISTED_BUILDING_GRADE} 
+							<br>
+                            <br>
+								<strong>External Notes:</strong> ${notesContent}`;
+                    // Create and show the popup
+                    new mapboxgl.Popup().setLngLat(e.lngLat).setHTML(popupContent).addTo(map);
+                });
+                // Change the cursor to a pointer when the mouse is over the site-symbols layer.
+                map.on('mouseenter', 'site-symbols', () => {
+                    map.getCanvas().style.cursor = 'pointer';
+                });
+                // Change it back to a default cursor when it leaves.
+                map.on('mouseleave', 'site-symbols', () => {
+                    map.getCanvas().style.cursor = '';
+                });
+            }
+            // Function to load the GeoJSON and configure the map
+            function loadGeoJSONData() {
+                fetchGeoJSON().then(data => {
+                    // Once the data is fetched, configure the map
+                    configureMap(data);
+                });
+            }
+        </script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div id="header-container">
+                <h1>Bristol History Explorer</h1>
+                <div id="search-container">
+                    <form id="search-form">
+                        <input id="search-input" name="searchterm" placeholder="Search..." type="text">
+                        <button id="submit" type="submit">
+                            <i class="material-icons">
+                            search
+                            </i>
+                        </button>
+                    </form>
+                <button class="button" onclick="filter(), clearSearch()">Clear Search</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="content">
+                <div id="checkbox-container">
+                    <h2>Filter</h2>
+                    <h4>Grade:</h4>
+                    <label for="II">
+                        <input type="checkbox" id="grade-II" name="grade-II" value="II" checked> Grade II </label>
+                    <br>
+                    <label for="II*">
+                        <input type="checkbox" id="grade-II*" name="grade-II*" value="II*" checked> Grade II* </label>
+                    <br>
+                    <label for="I">
+                        <input type="checkbox" id="grade-I" name="grade-I" value="I" checked> Grade I </label>
+                    <br>
+                    <br>
+                    <button class="button" id="locate-btn" onclick="getLocation()">
+                        <span id="btn-text">Find My Location </span>
+                        <div id="loading" class="hidden"></div>
+                    </button>
+                    
+                    
+                </div>
+                
+                <div id="map"></div>
+            </div>
+        </main>
+        <script>
+            document.getElementById('search-form').addEventListener('submit', function(event) {
+                event.preventDefault(); // Prevents page reload
+                const query = document.getElementById('search-input').value.trim();
+                search(query);
+            })
+
+            // Add event listeners for each checkbox
+            document.getElementById('grade-II').addEventListener('change', filter);
+            document.getElementById('grade-II*').addEventListener('change', filter);
+            document.getElementById('grade-I').addEventListener('change', filter);
+            filter();
+
+            // get query string parameters lat, lon
+            var urlParams = new URLSearchParams(location.search);
+            var lat = urlParams.get('lat');
+            var lon = urlParams.get('lon');
+            mapboxgl.accessToken = MY_TOKEN;
+            var map = new mapboxgl.Map({
+                container: 'map', // container ID
+                center: [-2.587910, 51.454514], // default to central bristol
+                zoom: 12 // zoom level
+            });
+
+            map.on('load', () => {
+                loadGeoJSONData();
+                map.resize();
+            });
+        </script>
+    </body>
+</html>
