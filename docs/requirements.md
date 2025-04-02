@@ -27,7 +27,7 @@ Parents: Families seeking educational and enjoyable activities for their childre
 ### Use Cases
 
 
-|  UC2| Virtual Tour with Augmented Reality (AR)Virtual | 
+|  UC2| Virtual Tour with Augmented Reality (AR)Virtual - **Wayne** | 
 | -------------------------------------- | ------------------- |
 | **Description** | Users can take a virtual tour of historical sites using AR, overlaying information on their smartphone camera view for an immersive experience. This enhances learning and engagement. |
 | **Actors** |Tourists, Local Residents, History Enthusiasts, Students |
@@ -41,7 +41,7 @@ Parents: Families seeking educational and enjoyable activities for their childre
 | **Issues** | TEnsuring AR content is accurate and aligns correctly with real-world locations.|
 
 
-| UC1 | Filter sites by grade - **OLLIE** | 
+| UC1 | Filter sites by grade - **Ollie** | 
 | -------------------------------------- | ------------------- |
 | **Description** | Users can explore historical sites through an interactive map, viewing site details by clicking on map markers. They can then filter buildings by grade to narrow down which historical sites they are most interested in seeing |
 | **Actors** | Tourists, Local Residents, History Enthusiasts, Students |
