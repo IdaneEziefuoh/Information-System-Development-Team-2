@@ -129,7 +129,7 @@ TODO: Explain how each use-case works by providing step-by-step screenshots for 
 
 ![Step 2 - Desktop](images/step2-search2.png)
 
-## Step 3: Enter the desired 
+## Step 3: Enter the site name
 - Click or tap on the grade you want to filter by (e.g., **Grade I** for the most historically significant buildings).
 - You can also select multiple grades at once.
 
