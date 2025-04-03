@@ -69,8 +69,6 @@ This architecture ensures an efficient and responsive application while maintain
 ## Bristol Open Data API
 TODO: Document each query to Bristol Open Data
 
-![UML Class diagrams representing JSON query results](images/class1.png)
-
 ![UML Class diagrams representing JSON query results](images/class2.png)
 TODO: Repeat as necessary
 
