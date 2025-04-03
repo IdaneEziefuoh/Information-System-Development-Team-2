@@ -64,7 +64,7 @@ The application follows the **Single-Page Application (SPA) architectural style*
 This architecture ensures an efficient and responsive application while maintaining a lightweight implementation without a backend.
 
 
-![Insert your component Diagram here](images/component.png)
+![Insert your component Diagram here](images/component-diagram.png)
 
 ## Bristol Open Data API
 TODO: Document each query to Bristol Open Data
